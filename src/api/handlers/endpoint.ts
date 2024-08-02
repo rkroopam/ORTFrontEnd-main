@@ -1,0 +1,21 @@
+const apiEndPoint = {
+  users: "/users/signup",
+  userById: (id: any) => `/users/${id}`,
+  login: "/users/signin",
+  resetPassword: "/users/resetPassword",
+  sendMailforResetPassword: "/users/sendMailforResetPassword",
+  forgetpassword: "/users/sendMailforResetPassword",
+  verifyEmail: "/users/verifyMail",
+  createAdmin: "/users/createAdmin",
+  createTeacher: "/users/createTeacher",
+  getAllAdmins: "/users/getAllAdmins",
+  getAllTeachers: "/users/getAllTeachers",
+  getAllStudents: "/users/getAllStudents",
+  updateAdmin: (adminId: any) => `/users/updateAdmin/${adminId}`,
+  updateTeacher: "/users/updateTeacher",
+  deleteAdmin: (adminId: any) => `/users/deleteAdmin/${adminId}`,
+  createPaymentModel: "/paymentModels",
+  updatePaymentModel: (id: any) => `/paymentModels/${id}`,
+  getPaymentModels: "/paymentModels",
+};
+export default apiEndPoint;
